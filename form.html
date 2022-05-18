@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form
+      action="mailto:info@pkamau426@gmail.com"
+      method="post"
+      target="_self"
+      accept-charset="UTP-8"
+      autocomplete="off"
+      enctype="text/plain"
+    >
+      User password:
+      <input type="password" name="psw" autocomplete="on" />
+
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="">Firstname:</label>
+        <input type="text" name="Firstname" value="" maxlength="10" /><br />
+        <label for="">Lastname:</label>
+        <input type="text" name="Lastname" value="" maxlength="10" /><br />
+        <br />
+        Date Of Birth: <input type="date" name="DOB" />
+        <br />
+        <br />
+        Favourite Color: <input type="color" name="favcolor" />
+        <br />
+        <label>Gender:</label> <br />
+        <input type="radio" name="Gender" value="Male" />Male <br />
+        <input type="radio" name="Gender" value="Female" />Female <br />
+        <input type="radio" name="Gender" value="Neutral" />Neutral <br />
+        <label for="">Email adress:</label>
+        <input type="email" name="email" autocomplete="on" /><br />
+      </fieldset>
+      <br />
+
+      <fieldset>
+        <legend>Education Status</legend>
+        <label for="">Level of Education</label>
+        <select name="Level of Education" id="">
+          <option value="Primary">Primary/option></option>
+          <option value="Secondary">Secondary</option>
+          <option value="College/University">College/University</option>
+        </select>
+        <br />
+        <br />
+        <label>Highest Level of Education</label>
+        <input
+          list="Higest Level of Education"
+          name="Highest level of Education"
+        />
+        <datalist id="Higest Level of Education">
+          <option value="KCSE">KCSE</option>
+          <option value="Certificate">Certificate</option>
+          <option value="Diploma">Diploma</option>
+          <option value="Degree">Degree</option>
+          <option value="Masters">Masters</option>
+          <option value="PHD">PHD</option>
+        </datalist>
+        <br />
+        <br />
+        Credencials: <input type="file" />
+      </fieldset>
+
+      <br />
+      Note:<br />
+      <textarea name="myMessage" id="" cols="30" rows="10"></textarea> <br />
+
+      <br />
+      Put a range on our website: <input type="range" />
+      <br />
+      <br />
+      <input type="submit" value="submit" />
+    </form>
+  </body>
+</html>
